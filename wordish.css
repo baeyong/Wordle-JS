@@ -1,0 +1,47 @@
+#status {
+    border: 1px solid;
+    width: 200px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    height: 30px;
+    width: 30px;
+    border:1px solid;
+    background-color: lightgray;
+    text-align: center;
+    font-size: x-large;
+}
+
+#guess {
+    text-align: center;
+}
+
+#hw1 {
+    border: 1px solid;
+    width: fit-content;
+    padding: 5px;
+    margin: auto;
+}
+
+#hw2 {
+    border: 1px solid;
+    width: fit-content;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: auto;
+    margin-top: 20px;
+}
+
