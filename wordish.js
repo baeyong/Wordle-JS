@@ -4,12 +4,31 @@ const start_button = document.getElementById("start_button");
 const target_text = document.getElementById("target_text");
 var target = null;
 
+// function target_set() {
+//     target = document.getElementById("target_text").value.toUpperCase();
+//     if (target !== null){
+//         document.getElementById('status').innerHTML = 'Target exists already.';
+//     } else if (target.length === 5) {
+//         console.log('TARGET WORD: ' + target);
+//         target_text.value = "";
+//     } else if (target.length !== 5) {
+//         document.getElementById('status').innerHTML = "Invalid Target.";
+//         target = null
+//     }
+// }
+
 function target_set() {
-    if (target !== null){
-        document.getElementById('status').innerHTML = 'Target exists already.';
-    } else {
-        target = document.getElementById("target_text").value.toUpperCase();
+    target = document.getElementById("target_text").value.toUpperCase()
+    if (target.length === 5) {
         console.log('TARGET WORD: ' + target);
+        target_text.value = "";
+        document.getElementById('status').innerHTML = "Enter a guess!";
+    } else if (target.length !== 5) {
+        document.getElementById('status').innerHTML = "Invalid Target.";
+        target = null;
+        target_text.value = "";
+    } else if (target !== null) {
+        document.getElementById('status').innerHTML = "Target exists already.";
         target_text.value = "";
     }
 }
